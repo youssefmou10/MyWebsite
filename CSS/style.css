@@ -1,0 +1,68 @@
+/***** Toute La page  *****/
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*** Menu ********/
+header
+{
+	text-transform: uppercase;
+	background-color: #0d47a1;
+	height: 68px;
+
+}
+header h1 {
+	color: white;
+	line-height: 60px;
+	text-shadow: 3px 3px 3px black;
+}
+header nav {
+	float: right;
+	position: relative;
+	top:-60px;
+}
+header nav ul{
+	padding: 0px;
+	margin: 0px;
+
+}
+
+header nav ul li {
+	list-style: none;
+	float: left;
+	padding: 15px;
+	position: relative;
+	/*border:0px solid beige;*/
+
+}
+
+header nav ul li a{
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	display: block;
+	width: 200px;
+	color: white;
+	line-height: 38px;
+	text-shadow: 3px 3px 3px black;
+	
+}
+header nav ul li ul {
+	position: absolute;
+	visibility: hidden;
+	right: 1px;
+	top: 68px;
+}
+
+header nav ul li:hover ul {
+	visibility: visible;
+}
+header nav ul li:hover{
+	background-color: orange;
+}
+header nav ul li ul {
+	background-color: #0d47a1;
+}
