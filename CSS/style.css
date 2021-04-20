@@ -1,6 +1,6 @@
 /***** Toute La page  *****/
 
-* {
+*{
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Open Sans', sans-serif;
@@ -23,6 +23,7 @@ header nav {
 	float: right;
 	position: relative;
 	top:-60px;
+	z-index: 1;
 }
 header nav ul{
 	padding: 0px;
@@ -65,4 +66,81 @@ header nav ul li:hover{
 }
 header nav ul li ul {
 	background-color: #0d47a1;
+}
+
+/**** Slider *******/
+
+header #slider-all img
+{
+	width: 100%;
+
+} 
+header #slider-all #slider{
+	width: 100%;
+	height: 900px;
+	margin: 1em auto;
+	overflow: hidden;
+	position: relative;
+	bottom: 60px;
+}
+.slide{
+	max-width: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	animation: slide 25s linear infinite;
+}
+.slide:nth-child(2){
+	animation-delay: 5s;
+}
+
+.slide:nth-child(3){
+	animation-delay: 10s;
+}
+.slide:nth-child(4){
+	animation-delay: 15s;
+}
+.slide:nth-child(5){
+	animation-delay: 20s;
+}
+
+@keyframes slide{
+	0%,20%,40%,60%,80%,100%{
+		opacity: 0;
+	}
+	5%,15%{
+		opacity: 1;
+	}
+}
+
+/********** Titre du site ******************/
+header #titre h3{
+	color:#007E33;
+}
+
+header #titre{
+	position: absolute;
+	top:190px;
+	left:10px;
+	font-size: 2em;
+	/*background-color: rgba(255,255,255,1);*/
+	width: 720px;
+	text-align: center;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+.btn-service,.btn-contact{
+	padding: 20px 0;
+	color: white;
+	border-radius: 50px;
+	font:bold 33px Arial ;
+	width: 300px;
+	box-shadow: 1px 1px 3px white;
+}
+
+.btn-contact{
+	background-color: #FF8800;
+}
+.btn-service{
+	background-color: #478bf9;
 }
