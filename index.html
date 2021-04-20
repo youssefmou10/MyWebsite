@@ -1,109 +1,96 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>MyWebsite</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MyWebSite</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1> MyWebSite </h1>
+      <nav>
+        <ul>
+          <li> <a href="#">Accueil</a> </li>
+          <li> <a href="#">ETAPES</a>
+            <!-- SOUS MENU ETAPES-->
+            <ul>
+              <li><a href="#">CONCEPTION</a> </li>
+              <li><a href="#">Developpement & Test</a> </li>
+              <li><a href="#">Mise en ligne</a> </li>
+            </ul>
+          </li>
+          <li> <a href="#">SERVICES</a>
+            <!-- SOUS MENU SERVICES-->
+            <ul>
+              <li><a href="#">CREATION SITE WEB</a> </li>
+              <li><a href="#">HEBERGEMENT</a> </li>
+            </ul>
+           </li>
+          <li> <a href="#">CONTACT</a> </li>
+        </ul>
+      </nav>
+      <div id="all-slider">
+        <ul id="slider">
+          <li class="slide"> <img src="images/slide/images-slide1.jpg" alt="image slider 1"> </li>
+          <li class="slide"> <img src="images/slide/images-slide2.jpg" alt="image slider 2"> </li>
+          <li class="slide"> <img src="images/slide/images-slide3.jpg" alt="image slider 3"> </li>
+          <li class="slide"> <img src="images/slide/images-slide4.jpg" alt="image slider 4"> </li>
+          <li class="slide"> <img src="images/slide/images-slide5.jpg" alt="image slider 5"> </li>
+        </ul>
+      </div>
+      <div id="titre">
+        <h3>Apprendre à créer un site web <br/> en toute simplicité !</h3>
+        <button type="button" name="button" class="btn-servives">Nos Services</button>
+        <button type="button" name="button" class="btn-contact">Contactez-Nous</button>
+      </div>
 
-</head>
-<body>
-	<header>
-		<h1>MyWebsite</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Acceuil</a></li>
-				<li>
-					<a href="#">Etapes</a>
-					<!--sous menu Etape -->
-					<ul>
-						<li>
-							<a href="#">Conception</a>
-						</li>
-						<li>
-							<a href="#">Developpement & Test</a>
-						</li>
-						<li>
-							<a href="#">Mise En ligne</a>
-						</li>
-					</ul>
-					
-					
-				</li>
-				<li>
-					<a href="#">Service</a>
-					<!-- Sous Menu Service -->
-					<ul>
-						<li><a href="#">Creation Site Web </a></li>
-						<li><a href="#">Hebergement</a></li>
-					</ul>
+    </header>
 
-				</li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-		<div id="slider-all">
-			<ul id="slider">
-				<li class="slide"><img src="Image/slide/images-slide1.jpg" alt="image slider 1"></li>
-				<li class="slide"><img src="Image/slide/images-slide2.jpg" alt="image slider 2"></li>
-				<li class="slide"><img src="Image/slide/images-slide3.jpg" alt="image slider 3"></li>
-				<li class="slide"><img src="Image/slide/images-slide4.jpg" alt="image slider 4"></li>
-				<li class="slide"><img src="Image/slide/images-slide5.jpg" alt="image slider 5"></li>
-			</ul>
-		</div>
-		<div id="titre">
-			<h3>Apprendre a crrer un site web <br> de toute simplicité!</h3>
-			<button class="btn-service" type="buuton">Nos Service</button>
-			<button class="btn-contact" type="buuton">Contactez-nous</button>
-			
-		</div>
-	</header>
-	<section id="container">
-		<section id="etapes">
-			<h4>ETAPES</h4>
-			<div class="etape1">
-				<img src="Image/etapes/conception.png" alt="Image de la partie conception">
-				<h4>Conception</h4>
-				<p>
-					Le lorem ipsum (également appelé faux-texte, lipsum, ou bolo bolo1) est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. 
-				</p>
-				<button type="button" name="button"> 
-					En savoir plus
-				</button>
-			</div>
-			<div class="etape2">
-				<img src="Image/etapes/developpement-test.png" alt="Image de la partie Développement & Test ">
-					<h4>Développement & Test</h4>
-				<p>
-					Le lorem ipsum (également appelé faux-texte, lipsum, ou bolo bolo1) est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. 
-				</p>
-				<button type="button" name="button"> 
-					En savoir plus
-				</button>
-			</div>
-			<div class="etape3">
-				<img src="Image/etapes/mise-en-ligne.png" alt="Image de la partie Mise en ligne">
-					<h4>Mise En Ligne</h4>
-				<p>
-					Le lorem ipsum (également appelé faux-texte, lipsum, ou bolo bolo1) est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. 
-				</p>
-				<button type="button" name="button"> 
-					En savoir plus
-				</button>
-			</div>
+    <section id="container">
+      <section id="etapes">
+        <h4>Etapes !</h4>
+        <div class="etape1">
+          <img src="images/etapes/conception.png" alt="Image descriptive de la partie conception">
+          <h4>CONCEPTION</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          </p>
+          <button type="button" name="button" class="btn-savoir-plus"> <a href="#">En savoir plus</a> </button>
 
-		</section>
-		<section id="services">
-			
-		</section>
-		<section id="Contact">
-			
-		</section>
-		
-	</section>
-	<footer>
-		
-	</footer>
+        </div>
+        <div class="etape2">
+          <img src="images/etapes/developpement-test.png" alt="Image descriptive de la partie Développement & Test">
+          <h4>Développement & Test</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          </p>
+          <button type="button" name="button" class="btn-savoir-plus"> <a href="#">En savoir plus</a> </button>
+        </div>
+        <div class="etape3">
+          <img src="images/etapes/mise-en-ligne.png" alt="Image descriptive de la partie Mise en ligne">
+          <h4>Mise en ligne</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          </p>
+          <button type="button" name="button" class="btn-savoir-plus"> <a href="#">En savoir plus</a> </button>
+        </div>
+      </section>
+      <section id="servives">
 
-</body>
+      </section>
+      <section id="contact">
+
+      </section>
+
+
+    </section>
+
+    <footer>
+
+    </footer>
+  </body>
 </html>

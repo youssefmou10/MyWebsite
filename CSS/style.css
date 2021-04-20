@@ -1,146 +1,194 @@
-/***** Toute La page  *****/
+/**************************** TOUTE LA PAGE ****************************/
 
-*{
-	margin: 0px;
-	padding: 0px;
-	font-family: 'Open Sans', sans-serif;
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open Sans Condensed', sans-serif;
+ 
 }
 
-/*** Menu ********/
-header
-{
-	text-transform: uppercase;
-	background-color: #0d47a1;
-	height: 68px;
+/*************************** MENU ******************************************/
 
-}
-header h1 {
-	color: white;
-	line-height: 60px;
-	text-shadow: 3px 3px 3px black;
-}
-header nav {
-	float: right;
-	position: relative;
-	top:-60px;
-	z-index: 1;
-}
-header nav ul{
-	padding: 0px;
-	margin: 0px;
-
+header{
+  text-transform: uppercase;
+  background-color: #0d47a1;
+  height: 68px;
 }
 
-header nav ul li {
-	list-style: none;
-	float: left;
-	padding: 15px;
-	position: relative;
-	/*border:0px solid beige;*/
-
+header h1{
+  color: white;
+  margin: 0 50px;
+  line-height: 60px;
+  text-shadow: 3px 3px 3px black;
 }
-
+header nav{
+  float: right;
+  position: relative;
+  top: -60px;
+  z-index: 1;
+  
+}
+header nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+header nav ul li{
+  list-style: none;
+  float: left;
+  padding: 15px;
+  position: relative;
+  border: 0px solid beige;
+}
 header nav ul li a{
-	text-decoration: none;
-	font-size: 20px;
-	font-weight: bold;
-	display: block;
-	width: 200px;
-	color: white;
-	line-height: 38px;
-	text-shadow: 3px 3px 3px black;
-	
-}
-header nav ul li ul {
-	position: absolute;
-	visibility: hidden;
-	right: 1px;
-	top: 68px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  width: 200px;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  line-height: 38px;
 }
 
-header nav ul li:hover ul {
-	visibility: visible;
+header nav ul li ul{
+  position: absolute;
+  visibility: hidden;
+  right: 1px;
+  top:68px;
+}
+header nav ul li ul li{
+  background-color: #0d47a1;
+
+}
+header nav ul li:hover ul{
+  visibility: visible;
 }
 header nav ul li:hover{
-	background-color: orange;
-}
-header nav ul li ul {
-	background-color: #0d47a1;
+  background-color: orange;
 }
 
-/**** Slider *******/
-
-header #slider-all img
-{
-	width: 100%;
-
-} 
-header #slider-all #slider{
-	width: 100%;
-	height: 900px;
-	margin: 1em auto;
-	overflow: hidden;
-	position: relative;
-	bottom: 60px;
+/************************** SLIDER ****************************/
+header #all-slider img{
+  width: 100%;
 }
+
+header #all-slider #slider{
+  width: 100%;
+  height: 900px;
+  margin: 1em auto;
+  overflow: hidden;
+  position: relative;
+  bottom: 60px;
+}
+
 .slide{
-	max-width: 100%;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	animation: slide 25s linear infinite;
-}
-.slide:nth-child(2){
-	animation-delay: 5s;
+  max-width: 100%;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  animation: slide 25s linear infinite;
 }
 
-.slide:nth-child(3){
-	animation-delay: 10s;
-}
-.slide:nth-child(4){
-	animation-delay: 15s;
-}
-.slide:nth-child(5){
-	animation-delay: 20s;
-}
+.slide:nth-child(2){animation-delay: 5s;}
+.slide:nth-child(3){animation-delay: 10s;}
+.slide:nth-child(4){animation-delay: 15s;}
+.slide:nth-child(5){animation-delay: 20s;}
 
 @keyframes slide{
-	0%,20%,40%,60%,80%,100%{
-		opacity: 0;
-	}
-	5%,15%{
-		opacity: 1;
-	}
+  0%, 20%,40%,60%, 80%, 100%{
+    opacity: 0;
+  }
+  5%,15%{
+    opacity:1;
+  }
 }
 
-/********** Titre du site ******************/
+/**************************** TITRE DU SITE ************************/
 header #titre h3{
-	color:#007E33;
+  color: #007E33;
+  text-shadow: 1px 1px 1px #FFF;
 }
 
 header #titre{
-	position: absolute;
-	top:190px;
-	left:10px;
-	font-size: 2em;
-	/*background-color: rgba(255,255,255,1);*/
-	width: 720px;
-	text-align: center;
-	text-shadow: 1px 1px 1px #fff;
+  position: absolute;
+  top: 190px;
+  left: 50px;
+  font-size: 3em;
+  /*background-color: rgba(255,255,255,1);*/
+  width: 720px;
+  text-align: center;
+  
 }
-
-.btn-service,.btn-contact{
-	padding: 20px 0;
-	color: white;
-	border-radius: 50px;
-	font:bold 33px Arial ;
-	width: 300px;
-	box-shadow: 1px 1px 3px white;
+/*********************************BUTTON *****************************/
+.btn-servives,.btn-contact{
+  padding: 20px 0px 20px 0px;
+  color: white;
+  border-radius: 50px;
+  font: bold 33px Arial;
+  width: 350px;
+  box-shadow: 1px 1px 3px white;
 }
 
 .btn-contact{
-	background-color: #FF8800;
+  background-color: #FF8800;
 }
-.btn-service{
-	background-color: #478bf9;
+.btn-servives{
+   background-color: #478bf9;
 }
+button a{
+  text-decoration: none;
+  color: white;
+}
+.btn-savoir-plus{
+  padding: 6px 10px 6px 10px;
+  border-radius: 50px;
+  background-color: red;
+  font: bold 13px Arial;
+  width: 140px;
+}
+/************************* ETAPES *******************************/
+section#container{
+  position: relative;
+  top: 838px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+section#container #etapes .etape1 img,section#container #etapes .etape3 img{
+  width: 80px;
+  height: 80px;
+}
+section#container #etapes .etape2 img{
+  width: 120px;
+  height: 120px;
+  
+}
+section#container #etapes div{
+  display: inline-block;
+  width: 300px;
+}
+
+section#container h4{
+  color: blue;
+  text-transform: uppercase;
+}
+
+section#container #etapes>h4{
+  font-size: 50px;
+  border-bottom: 5px solid black;
+}
+
+section#container p{
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
