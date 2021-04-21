@@ -146,6 +146,12 @@ button a{
   font: bold 13px Arial;
   width: 140px;
 }
+.btn-envoyer{
+  padding: 10px 15px;
+  background-color: #007E33;
+  border:none;
+  font:bold 13px Arial;
+}
 /************************* ETAPES *******************************/
 section#container{
   position: relative;
@@ -207,10 +213,46 @@ section#servives div .info
   left: -35px;
 
 }
+/***********Contact************/
+#contact
+{
+  padding-bottom: 50px;
+}
 
+#contact form{
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em;
+}
+#contact form label
+{
+  color: green;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: underline;
+  font-style: italic;
+}
+#contact form input{
+  width: 70%;
+  height: 3em;
+  cursor: pointer;
+}
 
+#contact form  textarea{
+  width: 70%;
+  height: 15em;
+  cursor: pointer;
+}
 
+input[type="text"],textarea
+{
+  border-bottom: 2px solid #AAA;
+   border-right: 2px solid #AAA;
 
-
-
-
+}
+::placeholder,textarea
+{
+  color: blue;
+  font-size: 1.5em;
+  font-style:italic;
+}
