@@ -256,3 +256,38 @@ input[type="text"],textarea
   font-size: 1.5em;
   font-style:italic;
 }
+/***********Footer**************/
+footer{
+  text-align: center;
+  position: relative;
+  top:828px;
+  background-color: #0d47EE;
+  color: white;
+}
+footer #titre-footer
+{
+  font-size: 50px;
+  text-shadow: 3px 3px 3px black;
+  margin-bottom: 50px;
+
+}
+footer #titre-footer span{
+  color: red;
+  font-size: 110px;
+}
+footer #menu-footer a
+{
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: none;
+
+}
+
+footer #copyright
+{
+  background-color: blue;
+  height: 50px;
+  line-height: 50px;
+
+}

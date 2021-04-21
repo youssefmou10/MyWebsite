@@ -12,7 +12,7 @@
       <nav>
         <ul>
           <li> <a href="#">Accueil</a> </li>
-          <li> <a href="#">ETAPES</a>
+          <li> <a href="#etapes">ETAPES</a>
             <!-- SOUS MENU ETAPES-->
             <ul>
               <li><a href="#">CONCEPTION</a> </li>
@@ -20,14 +20,14 @@
               <li><a href="#">Mise en ligne</a> </li>
             </ul>
           </li>
-          <li> <a href="#">SERVICES</a>
+          <li> <a href="#servives">SERVICES</a>
             <!-- SOUS MENU SERVICES-->
             <ul>
-              <li><a href="#">CREATION SITE WEB</a> </li>
-              <li><a href="#">HEBERGEMENT</a> </li>
+              <li><a href="#servives">CREATION SITE WEB</a> </li>
+              <li><a href="#servives">HEBERGEMENT</a> </li>
             </ul>
            </li>
-          <li> <a href="#">CONTACT</a> </li>
+          <li> <a href="#contact">CONTACT</a> </li>
         </ul>
       </nav>
       <div id="all-slider">
@@ -41,8 +41,8 @@
       </div>
       <div id="titre">
         <h3>Apprendre à créer un site web <br/> en toute simplicité !</h3>
-        <button type="button" name="button" class="btn-servives">Nos Services</button>
-        <button type="button" name="button" class="btn-contact">Contactez-Nous</button>
+        <button type="button" name="button" class="btn-servives"><a href="#servives">Nos Services</a></button>
+        <button type="button" name="button" class="btn-contact"><a href="#contact">Contactez-Nous</a></button>
       </div>
 
     </header>
@@ -137,7 +137,18 @@
     </section>
 
     <footer>
-
+          <div id="titre-footer">
+            MyWebsite <span>.</span>
+          </div>
+          <div id="menu-footer">
+            <a href="#">|Acceuil|</a>
+            <a href="#etapes">|Etapes|</a>
+            <a href="#servives">|Services|</a>
+            <a href="#contact">|Contact|</a>
+          </div>
+          <div id="copyright">
+            © 2019ByEspro Informatique
+          </div>
     </footer>
   </body>
 </html>
